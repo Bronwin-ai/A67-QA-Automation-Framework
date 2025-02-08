@@ -17,7 +17,11 @@ public class LoginTests extends BaseTest {
         WebDriver driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
+<<<<<<< HEAD
         String url = "https://app.koel.app/";
+=======
+        String url = "https://bbb.koel.app/";
+>>>>>>> two
         driver.get(url);
         Assert.assertEquals(driver.getCurrentUrl(), url);
         driver.quit();
