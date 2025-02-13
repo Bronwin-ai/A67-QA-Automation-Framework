@@ -13,7 +13,7 @@ public class Homework16 extends BaseTest{
 
 
         @Test
-        public void RegistrationNaviation() {
+        public void RegistrationNavigation() {
 
 
             ChromeOptions options = new ChromeOptions();
@@ -25,13 +25,11 @@ public class Homework16 extends BaseTest{
             String url = "https://qa.koel.app/";
             driver.get(url);
 
-           WebElement regLink= driver.findElement(By.cssSelector("a[href*='registration']"));
-           regLink.click();
+           WebElement regLink = driver.findElement(By.cssSelector("a[href*='registration']"));
+            regLink.click();
 
            String webaddress="https://qa.koel.app/registration";
-
-
-            Assert.assertEquals(driver.getCurrentUrl(), webaddress);
+           Assert.assertEquals(driver.getCurrentUrl(), webaddress);
             driver.quit();
         }
     }
